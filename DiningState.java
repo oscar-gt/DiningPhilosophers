@@ -7,4 +7,5 @@ public enum DiningState {
     THINKING,
     HUNGRY,
     EATING
+    // Hi
 }
