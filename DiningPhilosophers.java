@@ -1,4 +1,6 @@
-package edu.uwb.css;
+//package edu.uwb.css; // Commented out by me (Oscar)
+
+import java.util.concurrent.locks.Condition;	// For Condition[] self
 
 /**
  *
@@ -6,14 +8,19 @@ package edu.uwb.css;
  */
 public class DiningPhilosophers {
     DiningState[] state;
+    Condition[] self;
 
     // This will let all the tests run (and fail)
     // You'll want to remove it once you actually create an array :)
     int nPhil;
     public DiningPhilosophers(int nPhilosophers) {
         nPhil =  nPhilosophers;
+        for(int i = 0; i < numPhilosophers(); i++)
+        {
+        	state[i] = DiningState.THINKING;
+        }
     }
-
+   
     public void takeForks(int i) {
         Main.TPrint( "TakeForks:   i=" + i);
     }
