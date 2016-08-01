@@ -176,9 +176,9 @@ public class Main {
             }
 
             return result;
-        }
-
-        @Override
+        }// *******************		TESTS	TESTS	TESTS	TESTS	TESTS	TESTS	TESTS  *****************
+// *******************		TESTS	TESTS	TESTS	TESTS	TESTS	TESTS	TESTS  *****************
+        @Override// *******************		TESTS	TESTS	TESTS	TESTS	TESTS	TESTS	TESTS  *****************
         public void run()  {
             DiningState[] correctState = null;
             boolean thisPartPassed;
