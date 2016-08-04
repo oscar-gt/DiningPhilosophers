@@ -1,7 +1,6 @@
 // package edu.uwb.css; // Commented out by me (Oscar)
 
 import java.lang.Thread.State;
-import java.util.concurrent.locks.Condition;	// For Condition[] self
 
 /**
  *
@@ -33,6 +32,7 @@ public class DiningPhilosophers {
         Main.TPrint( "TakeForksAS:   i=" + i);
         // Philosophers want to eat!
         state[i] = DiningState.HUNGRY;
+        // test(i) may or may not change the philosopher's state
         test(i);
         Main.TPrint("state[" + i + "]" + " after test(" + i + ") is:  " + state[i]);
         while(state[i] != DiningState.EATING)
